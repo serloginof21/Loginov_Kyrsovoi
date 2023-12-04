@@ -7,12 +7,11 @@ public class PlayerController : MonoBehaviour
     public float speed = 6;
     private Vector2 direction;
     private Rigidbody2D rb;
-    Animator animator;
+    [SerializeField] Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -20,6 +19,9 @@ public class PlayerController : MonoBehaviour
         direction.x = Input.GetAxis("Horizontal");
         direction.y = Input.GetAxis("Vertical");
         
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
+        animator.SetFloat("Speed", direction.sqrMagnitude);
     }
     
     private void FixedUpdate() 
