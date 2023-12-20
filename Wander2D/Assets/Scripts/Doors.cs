@@ -7,7 +7,7 @@ public class Doors : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player")){
-            changeScene(0);
+            changeScene(1);
         }
     }
 
