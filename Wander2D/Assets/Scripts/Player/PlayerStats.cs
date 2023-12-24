@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
+    public int health = 1;
     public int coinCount = 0;
     public int flowerCount = 0;
 
@@ -14,6 +16,12 @@ public class PlayerStats : MonoBehaviour
 
         if(other.CompareTag("Flower")){
             flowerCount += 1;
+        }
+    }
+
+    private void Update() {
+        if(health <= 0){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

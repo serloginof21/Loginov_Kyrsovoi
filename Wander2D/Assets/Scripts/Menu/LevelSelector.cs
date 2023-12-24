@@ -29,4 +29,8 @@ public class LevelSelector : MonoBehaviour
         levelTwo.interactable = false;
         PlayerPrefs.DeleteAll();
     }
+
+    public void Exit(){
+        Application.Quit();
+    }
 }
