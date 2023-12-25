@@ -24,9 +24,9 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Vertical", direction.y);
         animator.SetFloat("Speed", direction.sqrMagnitude);
 
-        if(Input.GetKeyDown(KeyCode.Escape)){
-            SceneManager.LoadScene("MainMenu");
-        }
+        // if(Input.GetKeyDown(KeyCode.Escape)){
+        //     SceneManager.LoadScene("MainMenu");
+        // }
     }
     
     private void FixedUpdate() 
