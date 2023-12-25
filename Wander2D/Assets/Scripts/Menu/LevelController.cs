@@ -9,6 +9,7 @@ public class LevelController : MonoBehaviour
     public static LevelController instance = null;
     int sceneIndex;
     int levelComplete;
+    public CoinsText coinsText;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class LevelController : MonoBehaviour
 
     void NextLevel(){
         SceneManager.LoadScene(sceneIndex + 1);
+        coinsText.ResetCoinCount();
     }
 
     void LoadMainMenu(){

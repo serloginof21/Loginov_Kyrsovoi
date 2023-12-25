@@ -10649,6 +10649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4861757885830724966, guid: ee37cda7c66eca245b798f6481e595d9, type: 3}
+      propertyPath: coinsText
+      value: 
+      objectReference: {fileID: 788676324}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65573,6 +65577,17 @@ MonoBehaviour:
   playerStats: {fileID: 373686406}
   door: {fileID: 728688324}
   openDoor: {fileID: 1234780732}
+--- !u!114 &788676324 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5982938761068654802, guid: d94ee4d42f1f82543ac2951abb229bb6, type: 3}
+  m_PrefabInstance: {fileID: 6145697058960770583}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356eff1bdc87fa14fb0cd156d5a4fe44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &860377642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66907,7 +66922,6 @@ GameObject:
   - component: {fileID: 1564776488}
   - component: {fileID: 1564776487}
   - component: {fileID: 1564776491}
-  - component: {fileID: 1564776490}
   m_Layer: 0
   m_Name: Vase
   m_TagString: Vase
@@ -67041,18 +67055,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2086818689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1564776490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564776486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35bf401782f82ec45b726275562244f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1564776491
 Rigidbody2D:
   serializedVersion: 4
@@ -68860,6 +68862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 5277385441721318083, guid: 23b1033f3668b48438b92d49e7abb2af, type: 3}
+      propertyPath: coinsText
+      value: 
+      objectReference: {fileID: 788676324}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

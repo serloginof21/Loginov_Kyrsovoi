@@ -18,4 +18,7 @@ public class CoinsText : MonoBehaviour
     {
         text.text = Coin.ToString();
     }
+    public void ResetCoinCount() {
+        Coin = 0;
+    }
 }
